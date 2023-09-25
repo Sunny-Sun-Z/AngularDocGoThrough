@@ -1,0 +1,16 @@
+
+<p  
+    [id]="sayHelloId" 
+    [style.color] ="color"
+      
+> You can set my color!
+</p>
+
+<div *ngIf="canEdit; else noEdit"> {{message}} </div>
+
+<div><button (click)="clickme()" type="button" [disabled] = "disabled" >Click Me</button></div>
+
+
+<ng-template #noEdit>
+    <p>The following is read only.</p>
+</ng-template>

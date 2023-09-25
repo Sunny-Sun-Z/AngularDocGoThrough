@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+####Shufang 
+
+-s for inline css, preventing style file creation
+--flat to prevent folder creation
+-t for inline template, preventing html file creation
+--skip-Tests to prevent .spec file creation
