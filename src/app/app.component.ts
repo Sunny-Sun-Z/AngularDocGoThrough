@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
 
   canSave = true;
   clickMessage=''
-
+  clickMessage2 = '';
   fontSizePx = 16;
 
   currentClasses: Record<string, boolean> = {};

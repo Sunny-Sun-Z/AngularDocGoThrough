@@ -415,10 +415,16 @@ with [(ngModel)]
 
 <a class="to-toc" href="#toc">top</a>
 
-
-
 <!-- inputs and output -->
+<hr />
+<h2 id="inputs-and-outputs">Inputs and Outputs</h2>
 
+<img [src]="iconUrl" alt="icon" />
+<button type="button" (click)="onSave()">Save</button>
+
+<app-hero-detail [hero]="currentHero" (deleteRequest)="deleteHero($event)"></app-hero-detail>
+
+<div (myClick)="clickMessage2 = $event" clickable>myClick2</div>{{clickMessage2}}
 
 
 
