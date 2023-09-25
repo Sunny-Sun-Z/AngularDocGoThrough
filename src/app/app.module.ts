@@ -12,6 +12,7 @@ import { BigHeroDetailComponent } from './hero-detail.component';
 import { HeroFormComponent } from './hero-form.component';
 import { ClickDirective } from './click.directive';
 import { SizerComponent } from './sizer.component';
+import { heroSwitchComponents } from './hero-switch.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { SizerComponent } from './sizer.component';
     HeroFormComponent,
     ClickDirective,
     SizerComponent,
+    heroSwitchComponents,
   
    
   ],

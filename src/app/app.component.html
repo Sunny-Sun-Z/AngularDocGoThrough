@@ -383,15 +383,22 @@ with [(ngModel)]
 <div>
     <label for="hero-{{h}}" *ngFor="let h of heroes">
         <input 
-        id="hero-{h}"
+        id="hero-{{h}}"
         type="radio"
-        name="heroes"
+        name="heroes1"
         [(ngModel)]="currentHero"
-        value="h"> {{h.name}}
-    </label>
+        [value]="h"> {{h.name}}  
+    </label> <br /> {{currentHero.name}}
 </div>
 
+<div [ngSwitch]="currentHero.emotion">
+    <app-happy-hero *ngSwitchCase="'happy'" [hero]="currentHero"></app-happy-hero>
+    <app-sad-hero *ngSwitchCase="'sad'" [hero]="currentHero"></app-sad-hero>
+    <app-confused-hero *ngSwitchCase="'confused'" [hero]="currentHero"></app-confused-hero>
+    <div *ngSwitchCase="'confused'">Are you as confused as {{ currentHero.name }}?</div>
+    <app-unknown-hero *ngSwitchDefault [hero]="currentHero"></app-unknown-hero>
 
+</div>
 
 
 

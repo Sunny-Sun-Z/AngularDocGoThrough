@@ -11,9 +11,9 @@ export class Hero{
             new Date('08/19/2004'),
             'https://www.imdb.com/title/tt0065832'
         ),
-        new Hero(1, 'Lianhe','More happy'),
-        new Hero(2, 'Shufang', 'cool'),
-        new Hero(3, 'Shujie', 'confident'),
+        new Hero(1, 'Lianhe','happy'),
+        new Hero(2, 'Shufang', 'sad'),
+        new Hero(3, 'Shujie', 'confused'),
         new Hero(4, 'Shuhui',)
     ]
     constructor(
