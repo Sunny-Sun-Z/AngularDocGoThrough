@@ -448,6 +448,47 @@ with [(ngModel)]
     Price: {{product.price | currency: 'USD': 'symbol'}}
 </div>
 
+<a class="to-toc" href="#toc">top</a>
+
+<!-- Null values and the safe navigation operator -->
+<hr />
+<h2 id="safe-navigation-operator">Safe navigation operator <em>?.</em></h2>
+
+<div>The current hero's name is {{ currentHero!.name }}</div>
+
+<!--
+The null hero's name is {{nullHero.name}}
+
+See console log:
+  TypeError: Cannot read property 'name' of null in [null]
+-->
+<!--No hero, div not displayed, no error -->
+
+<div *ngIf="nullHero">The null hero`s name is {{nullHero.name}} </div>
+
+<div>The null hero`s name is {{nullHero && nullHero.name}} </div>
+
+<!-- important -->
+<div>The null hero`s name is {{nullHero?.name}} </div>
+<a class="to-toc" href="#toc">top</a>
+
+<!-- non-null assertion operator -->
+<hr />
+<h2 id="non-null-assertion-operator">
+  Non-null assertion operator <em>!.</em>
+</h2>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <router-outlet></router-outlet>
