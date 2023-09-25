@@ -2,6 +2,8 @@ import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren }
 import { Hero } from './hero';
 import { FormBuilder } from '@angular/forms';
 
+export enum color {Red, Blue, Green}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -29,6 +31,10 @@ export class AppComponent implements OnInit {
   clickMessage=''
   clickMessage2 = '';
   fontSizePx = 16;
+
+  Color = color;
+  color= this.Color.Red;
+  colorToggle(){this.color=(this.color===this.Color.Red)? this.Color.Blue : this.Color.Green}
 
   currentClasses: Record<string, boolean> = {};
 
