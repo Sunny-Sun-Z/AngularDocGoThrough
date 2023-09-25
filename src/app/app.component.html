@@ -428,12 +428,25 @@ with [(ngModel)]
 
 
 
+<a class="to-toc" href="#toc">top</a>
 
+<!-- Pipes -->
+<hr />
+<h2 id="pipes">Pipes</h2>
 
+<div>Title through setUppercaseName pipe {{title | uppercase}}</div>
 
+<!-- pipe with configuration argument => "February 25, 1970" -->
 
+<div>Birthdate: {{currentHero!.birthdate | date: 'longDate'}} </div>
+<div>{{currentHero | json}}</div>
+<div>
+    Birthdate: {{currentHero.birthdate | date: 'longDate' | uppercase}}
+</div>
 
-
+<div>
+    Price: {{product.price | currency: 'USD': 'symbol'}}
+</div>
 
 
 

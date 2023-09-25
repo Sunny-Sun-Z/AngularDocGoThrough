@@ -32,6 +32,10 @@ export class AppComponent implements OnInit {
 
   currentClasses: Record<string, boolean> = {};
 
+  product ={
+    name: 'firmfarm',
+    price: 42
+  }
   ngOnInit(): void {
     this.heroes = Hero.heroes.map(h => h.clone());
     this.currentHero = this.heroes[0];
