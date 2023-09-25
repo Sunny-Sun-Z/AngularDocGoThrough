@@ -143,6 +143,8 @@ export class AppComponent implements OnInit {
   }
 trackById(index: number, item: any): number { return item.id; }
 
+  callPhone(value:string) {this.alert(`Calling phone ${value} ...`)}
+
 }
 // helper to track changes to viewChildren
 function trackChanges(views: QueryList<ElementRef>, changed: () => void) {

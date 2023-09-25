@@ -397,11 +397,17 @@ with [(ngModel)]
     <app-confused-hero *ngSwitchCase="'confused'" [hero]="currentHero"></app-confused-hero>
     <div *ngSwitchCase="'confused'">Are you as confused as {{ currentHero.name }}?</div>
     <app-unknown-hero *ngSwitchDefault [hero]="currentHero"></app-unknown-hero>
-
 </div>
 
+<a class="to-toc" href="#toc">top</a>
 
+<!-- template reference variable -->
+<hr />
+<h2 id="ref-vars">Template reference variables</h2>
 
+<input #phone placeholder="phone number" />
+<button type="button" (click)="callPhone(phone.value)">Call</button>
 
+<button type="button" #btn disabled [innerHTML]="'disabled by attribute ' + btn.disabled "></button>
 
 <router-outlet></router-outlet>
