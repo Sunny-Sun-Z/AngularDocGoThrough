@@ -89,6 +89,11 @@ export class AppComponent implements OnInit {
      event? this.currentHero.name = (event.target as any).value: this.currentHero.name="";  
   }
 
+  updateCurrentHeroName2(event: Event) : string
+  {
+     //event? this.currentHero.name = (event.target as any).value: this.currentHero.name=""; 
+      return (event.target as HTMLInputElement).value;
+  }
   setUppercaseName(name: string)
   {
     this.currentHero.name = name.toUpperCase();

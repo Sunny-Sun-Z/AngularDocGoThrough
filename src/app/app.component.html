@@ -191,6 +191,8 @@
 <hr>
 <h3>Result: {{currentHero.name}}</h3>
 <input [value]="currentHero.name" (input)="updateCurrentHeroName($event)">
+<h3>new test:</h3>
+<input [value]="currentHero.name" (input)="currentHero.name=updateCurrentHeroName2($event)">
 without NgModel
 <br /><br />
 
